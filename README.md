@@ -22,7 +22,7 @@ Group ID `sg-0ffb278890f6e3c0c`
 
 ssh port 22 `aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 22 --cidr 0.0.0.0/0`
 
-app port 3000 `aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 3000 --cidr 0.0.0.0/0`
+app port 3333 `aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 3333 --cidr 0.0.0.0/0`
 
 Verify the Security groups
 
