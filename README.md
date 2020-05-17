@@ -43,7 +43,9 @@ Secure: `chmod 400 ~/.ssh/EffectiveDevOpsAWS.pem`
 `aws ec2 run-instances --instance-type t2.micro --key-name EffectiveDevOpsAWS --security-group-ids sg-0ffb278890f6e3c0c --image-id ami-cfe4b2b0`
 
 Instance ID `i-082b94dd8837dceae`
+
 Public IP `34.226.153.53`
+
 DNS Name `ec2-34-226-153-53.compute-1.amazonaws.com`
 
 ### SSH to the host
@@ -62,4 +64,14 @@ Pull from the author's web site
 
 `wget https://raw.githubusercontent.com/yogeshraheja/Effective-DevOps-with-AWS/master/Chapter02/helloworld.js -O /home/ec2-user/helloworld.js`
 
-or better yet clone this repo!
+or better yet get it from this repo!
+
+`wget https://raw.githubusercontent.com/jzaiss1/swdv660-week2-web-app/master/app/helloworld.js -O /home/ec2-user/helloworld.js`
+
+Start the server `node helloworld.js`
+
+### Create as a service
+
+Pull the config file 
+
+`sudo wget https://raw.githubusercontent.com/jzaiss1/swdv660-week2-web-app/master/app/helloworld.conf -O /etc/init/helloworld.conf`
